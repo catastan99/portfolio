@@ -1,0 +1,15 @@
+// load includes
+@import "includes/reset";
+@import "includes/fonts";
+@import "includes/forms";
+@import "includes/variables";
+@import "includes/general";
+@import "includes/typography";
+
+// load partials
+// @import "partials/*";
+@import "partials/navbar";
+@import "partials/hero";
+@import "partials/about";
+@import "partials/skills";
+@import "partials/timeline";

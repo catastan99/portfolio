@@ -1,0 +1,42 @@
+.Navbar{
+    height: $navbar-height;
+    width: 100%;
+    background-color: $white;
+    color: $primary-color;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 5;
+    font-family: 'Rubik Burned', cursive;
+    font-family: 'Hanalei', cursive;
+
+
+    .container{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        height: 100%;
+
+       *{
+        margin-bottom: 0;
+       }
+
+       p{
+        font-size: 30px;
+       }
+
+       .icons{
+        display: flex;
+        align-items: center;
+        padding: 0;
+        margin-left: auto;
+
+        .icon{
+            margin-right: 10px;
+            font-size: 24px;
+        }
+       }
+    }
+}
