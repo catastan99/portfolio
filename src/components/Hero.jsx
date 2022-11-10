@@ -51,14 +51,14 @@ function Hero() {
     <div className='Hero' >
         <div className="container">
             <h1>Junior<br/>Frontend<br/><span>Developer</span></h1>
-            <div className="heart-container">
+            {/* <div className="heart-container">
               <FaHeart className='heart-icon'/>
               <div className="heart-beats-info">
                 <p>{beats}</p>
                 <FcInfo title="Click the icon to show more" onClick={infoIconHandler}/>
                 {showMessage && <p className='info-message'> heart beats since '99</p>}
               </div>
-            </div>
+            </div> */}
             
         </div>
     </div>

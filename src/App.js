@@ -1,15 +1,13 @@
-import About from './components/About';
-import Hero from './components/Hero';
-import Navbar from './components/Navbar';
+import Home from "./pages/Home";
+import "./scss/styles.scss";
+import { Routes, Route } from "react-router-dom";
 import './scss/styles.scss'
 
 function App() {
   return (
-    <div className="App">
-      <Navbar />
-      <Hero />
-      <About />
-    </div>
+    <Routes>
+      <Route path="/" element={<Home />} />
+    </Routes>
   );
 }
 
