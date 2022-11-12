@@ -1,0 +1,59 @@
+@import "../../scss/includes/variables";
+
+.Contact {
+  background-color: $dark-blue;
+  color: $white;
+  overflow: hidden;
+  position: relative;
+  margin-top: -10px;
+  a {
+    color: $white;
+
+    &:hover {
+      color: $light-blue;
+    }
+  }
+
+  form {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+
+    textarea {
+      grid-row-start: 1;
+      grid-row-end: 4;
+      grid-column-start: 2;
+    }
+
+    @media (max-width: 500px) {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+
+  .validation {
+    position: absolute;
+    right: -200px;
+    bottom: 50px;
+    padding: 20px 40px;
+    background-color: white;
+    color: $dark-blue;
+    animation: entry 8s forwards;
+  }
+
+  @keyframes entry {
+    0% {
+      right: -200px;
+    }
+    30% {
+      right: 0;
+    }
+    80% {
+      right: 0;
+    }
+    100% {
+      right: -200px;
+      display: none;
+    }
+  }
+}

@@ -2,6 +2,8 @@ import React, { useEffect, useState } from "react";
 import { FaLinkedin, FaGithub } from "react-icons/fa";
 import { BiNews } from "react-icons/bi";
 import { Link } from "react-router-dom";
+import CV from "../../assets/documents/cv-stancatalin-nov2022.pdf";
+import styles from "./navbar.module.scss";
 
 function Navbar() {
   const [scrollY, setScrollY] = useState(0);
@@ -15,26 +17,32 @@ function Navbar() {
   }, []);
 
   return (
-    <div className={scrollY < 100 ? "Navbar" : "Navbar scrolled"}>
-      <div className="container">
+    <div
+      className={
+        scrollY < 100
+          ? styles.Navbar
+          : [styles.Navbar, styles.scrolled].join(" ")
+      }
+    >
+      <div className={[styles.container, "container"].join(" ")}>
         <Link to="/">
-          <div className="logo">
+          <div className={styles.logo}>
             <p>CATALIN STAN</p>
           </div>
         </Link>
-        <ul className="icons">
-          <li className="icon">
+        <ul className={styles.icons}>
+          <li className={styles.icon}>
             <a href="https://www.linkedin.com/in/catalinstan99/">
               <FaLinkedin />
             </a>
           </li>
-          <li className="icon">
+          <li className={styles.icon}>
             <a href="https://github.com/catastan99">
               <FaGithub />
             </a>
           </li>
-          <li className="icon">
-            <a href="">
+          <li className={styles.icon}>
+            <a href={CV} target="blank">
               <BiNews />
             </a>
           </li>

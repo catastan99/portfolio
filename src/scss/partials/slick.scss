@@ -1,0 +1,43 @@
+.slick-next {
+  right: -35px;
+  color: red;
+
+  @media (max-width: $phone-max) {
+    right: 10px;
+  }
+}
+
+.slick-prev {
+  left: -45px;
+  z-index: 5;
+
+  @media (max-width: $phone-max) {
+    left: 0px;
+  }
+}
+
+.slick-next:before,
+.slick-prev:before {
+  font-size: 35px;
+  color: $peach;
+}
+
+.slick-dots {
+  bottom: -50px;
+}
+
+.slick-dots li.slick-active button:before {
+  color: $peach;
+  opacity: 1;
+}
+
+.slick-dots li:hover button:before {
+  color: $peach;
+  opacity: 1;
+}
+
+.slick-dots li button:before {
+  color: rgb(122, 122, 122);
+  opacity: 1;
+  font-size: 15px;
+}
